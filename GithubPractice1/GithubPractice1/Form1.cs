@@ -36,6 +36,7 @@ namespace GithubPractice1
             }
 
             textBoxResult.Text = oper1 + oper + oper2 + " = " + result;
+            //최종 제출용 태그 추가
         }
     }
 }
