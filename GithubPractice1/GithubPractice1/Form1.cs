@@ -19,7 +19,23 @@ namespace GithubPractice1
 
         private void button1_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("연습용 버튼입니다.");
+            float oper1 = float.Parse(textBoxOperand1.Text);
+            float oper2 = float.Parse(textBoxOperand2.Text);
+            float result = 0;
+
+            string oper = "";
+
+            if(radioButtonPlus.Checked)
+            {
+                oper = "+";
+                result = oper1 + oper2;
+            } else if(radioButtonMinus.Checked)
+            {
+                oper = "-";
+                result = oper1 - oper2;
+            }
+
+            textBoxResult.Text = oper1 + oper + oper2 + " = " + result;
         }
     }
 }
