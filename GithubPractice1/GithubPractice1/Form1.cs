@@ -15,7 +15,6 @@ namespace GithubPractice1
         public Form1()
         {
             InitializeComponent();
-            radioButtonOperator1.Text = "*";
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -34,14 +33,9 @@ namespace GithubPractice1
             {
                 oper = "-";
                 result = oper1 - oper2;
-            } else if(radioButtonOperator1.Checked)
-            {
-                oper = "*";
-                result = oper1 * oper2;
             }
 
             textBoxResult.Text = oper1 + oper + oper2 + " = " + result;
-            //최종 제출용 태그 추가
         }
     }
 }
