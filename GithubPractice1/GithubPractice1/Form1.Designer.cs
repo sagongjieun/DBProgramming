@@ -34,11 +34,12 @@
             this.radioButtonPlus = new System.Windows.Forms.RadioButton();
             this.radioButtonMinus = new System.Windows.Forms.RadioButton();
             this.textBoxResult = new System.Windows.Forms.TextBox();
+            this.radioButtonOperator1 = new System.Windows.Forms.RadioButton();
             this.SuspendLayout();
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(97, 260);
+            this.button1.Location = new System.Drawing.Point(97, 311);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(167, 37);
             this.button1.TabIndex = 0;
@@ -55,7 +56,7 @@
             // 
             // textBoxOperand2
             // 
-            this.textBoxOperand2.Location = new System.Drawing.Point(128, 170);
+            this.textBoxOperand2.Location = new System.Drawing.Point(128, 221);
             this.textBoxOperand2.Name = "textBoxOperand2";
             this.textBoxOperand2.Size = new System.Drawing.Size(100, 25);
             this.textBoxOperand2.TabIndex = 2;
@@ -84,16 +85,27 @@
             // 
             // textBoxResult
             // 
-            this.textBoxResult.Location = new System.Drawing.Point(95, 363);
+            this.textBoxResult.Location = new System.Drawing.Point(95, 414);
             this.textBoxResult.Name = "textBoxResult";
             this.textBoxResult.Size = new System.Drawing.Size(169, 25);
             this.textBoxResult.TabIndex = 5;
+            // 
+            // radioButtonOperator1
+            // 
+            this.radioButtonOperator1.AutoSize = true;
+            this.radioButtonOperator1.Location = new System.Drawing.Point(154, 172);
+            this.radioButtonOperator1.Name = "radioButtonOperator1";
+            this.radioButtonOperator1.Size = new System.Drawing.Size(17, 16);
+            this.radioButtonOperator1.TabIndex = 6;
+            this.radioButtonOperator1.TabStop = true;
+            this.radioButtonOperator1.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(369, 481);
+            this.Controls.Add(this.radioButtonOperator1);
             this.Controls.Add(this.textBoxResult);
             this.Controls.Add(this.radioButtonMinus);
             this.Controls.Add(this.radioButtonPlus);
@@ -115,6 +127,7 @@
         private System.Windows.Forms.RadioButton radioButtonPlus;
         private System.Windows.Forms.RadioButton radioButtonMinus;
         private System.Windows.Forms.TextBox textBoxResult;
+        private System.Windows.Forms.RadioButton radioButtonOperator1;
     }
 }
 
