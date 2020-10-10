@@ -31,8 +31,8 @@ namespace GithubPractice1
                 result = oper1 + oper2;
             } else if(radioButtonMinus.Checked)
             {
-                oper = "*";
-                result = oper1 * oper2;
+                oper = "/";
+                result = oper1 / oper2;
             }
 
             textBoxResult.Text = oper1 + oper + oper2 + " = " + result;
